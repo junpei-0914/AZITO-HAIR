@@ -61,3 +61,10 @@ window.addEventListener("scroll",toggleHeader);
 window.addEventListener("resize",toggleHeader);
 
 toggleHeader();
+
+//メニューアイコン
+const menuIcon = document.querySelector('.menu-icon');
+
+menuIcon.addEventListener('click', function() {
+  document.querySelector('.header-right').classList.toggle('active');
+});
