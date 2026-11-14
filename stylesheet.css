@@ -50,6 +50,21 @@ header{
     
 }
 
+.container span{
+    display: none;
+}
+
+.menu-icon {
+  color: #B8B0A3;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+
+}
+
 
 .container{
     padding: 0px 28px;
@@ -429,6 +444,17 @@ footer{
     .sp-br{
         display: block;
     }
+
+/*ヘッダー*/
+    .container span{
+        display: block;
+    }
+
+    .header-right{
+        display: none;
+    }
+
+
 /*メイン*/       
     .main-1_list li{
         border-right: none;
