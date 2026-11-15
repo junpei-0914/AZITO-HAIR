@@ -63,8 +63,13 @@ window.addEventListener("resize",toggleHeader);
 toggleHeader();
 
 //メニューアイコン
-const menuIcon = document.querySelector('.menu-icon');
+document.addEventListener('DOMContentLoaded', function() {
 
-menuIcon.addEventListener('click', function() {
-  document.querySelector('.header-right').classList.toggle('active');
+    const menuIcon = document.querySelector('.menu-icon');
+    const headerRight = document.querySelector('.header-right');
+
+    menuIcon.addEventListener('click', function() {
+        headerRight.classList.toggle('active');
+    });
+
 });
