@@ -16,12 +16,18 @@ html,body{
 body{
     overflow-x: hidden;
     font-family: "Noto Sans JP", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    flex: 1;
 }
 
 
 header{
-    background:#343434;
-    opacity: 0.9;
+    background: rgba(52,52,52,0.9);
     height: 70px;
     width: 100%;
     z-index: 999;
@@ -50,21 +56,20 @@ header{
     
 }
 
-.container span{
-    display: none;
-}
 
 .menu-icon {
-  color: #B8B0A3;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  cursor: pointer;
-  position: relative;
-  z-index: 100;
-
+    background: rgba(52, 52, 52, 0.9);
+    color: #B8B0A3;
+    font-size: 25px;
+    cursor: pointer;
+    position: fixed;
+    top: 14px;
+    right: 0;
+    z-index: 1500;
+    display: none !important;
+    border-radius: 4px;
+    padding: 8px 10px;
 }
-
 
 .container{
     padding: 0px 28px;
@@ -446,14 +451,28 @@ footer{
     }
 
 /*ヘッダー*/
-    .container span{
-        display: block;
+    .menu-icon{
+        display: block !important;
     }
 
     .header-right{
         display: none;
     }
 
+    .header-right.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        background: #343434;
+        padding: 20px 0;
+    }
+
+    .header-right a{
+        margin: 15px 20px;
+    }
 
 /*メイン*/       
     .main-1_list li{
@@ -488,4 +507,45 @@ footer{
     }
 
 /*マップ*/ 
+    .map{
+        height: auto;
+        min-height: 90vh;
+    }
+
+/*フッター*/
+    footer{
+        height: auto;
+        min-height: 120px;
+        padding: 20px 0;
+        margin-top: auto;
+    }
+
+    .copyright{
+        position: static;
+        transform: none;
+        left: auto;
+        font-size: 8px;
+        white-space: nowrap;
+    }
+
+    footer .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .footer-logo{
+        width: 90px;
+    }
+
+    .footer-right a{
+        font-size: 14px;
+        margin: 0 3px;
+    }
+
+
 }
