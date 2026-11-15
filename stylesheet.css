@@ -440,7 +440,7 @@ footer{
 }
 
 /*スマホ版*/
-@media(max-width:375px ){
+@media(max-width:670px ){
     .sp-br{
         display: block;
     }
