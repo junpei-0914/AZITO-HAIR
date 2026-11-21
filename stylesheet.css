@@ -484,9 +484,10 @@ footer{
     }
 
     .main-1{
+        position: relative;
         touch-action: pan-y;
-        height: 100vh;
-        min-height: 0;
+        height: 100svh;
+        min-height: 100svh;
         overflow: hidden;
     }
 
@@ -495,7 +496,7 @@ footer{
     }
 
     .main-1_image{
-        background-size: auto 100%;
+        background-size: auto 100svh;
         background-position: center;
         background-repeat: no-repeat;
     }
