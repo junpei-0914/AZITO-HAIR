@@ -1,3 +1,13 @@
+//  追加：スマホで最初に表示した画面の高さを固定
+if (window.matchMedia("(max-width: 670px)").matches) {
+    const heroHeight = window.innerHeight;
+
+    document.documentElement.style.setProperty(
+        "--hero-height",
+        `${heroHeight}px`
+    );
+}
+
 //メイン4分割・スマホスワイプ
 
 const visuals = document.querySelectorAll(
