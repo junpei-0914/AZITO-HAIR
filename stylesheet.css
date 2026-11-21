@@ -368,6 +368,11 @@ header{
     text-decoration: none;
 }
 
+.tel-link{
+    color: inherit;
+    text-decoration: none;
+}
+
 .btn.message-1 span{
     font-size: 12px;
     letter-spacing: 0.08em;
