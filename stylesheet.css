@@ -356,7 +356,7 @@ header{
     font-weight: 500;
 }
 
-.map-info a{
+.map-info > a{
     display: block;
     width: 180px;
     margin: 45px auto 0;
