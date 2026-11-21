@@ -465,8 +465,8 @@ footer{
         position: absolute;
         top: 70px;
         right: 0;
-        width: 200px;
-        background: #343434;
+        width: 120px;
+        background: rgba(52,52,52,0.8);
         padding: 20px 0;
     }
 
@@ -477,6 +477,21 @@ footer{
 /*メイン*/       
     .main-1_list li{
         border-right: none;
+    }
+
+    .main-1{
+        touch-action: pan-y;
+    }
+
+    .main-1_list{
+        display: none;
+    }
+
+    .main-1_image{
+        background-size: auto 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #343434;
     }
 
 /*コンセプト*/
@@ -566,7 +581,7 @@ footer{
     }
 
     .footer-logo{
-        width: 90px;
+        width: 150px;
     }
 
     .footer-right a{
