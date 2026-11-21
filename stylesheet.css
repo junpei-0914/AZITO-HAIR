@@ -486,6 +486,8 @@ footer{
     .main-1{
         touch-action: pan-y;
         height: 100svh;
+        min-height: 100svh;
+        overflow: hidden;
     }
 
     .main-1_list{
@@ -493,10 +495,9 @@ footer{
     }
 
     .main-1_image{
-        background-size: auto 100%;
+        background-size: auto 100svh;
         background-position: center;
         background-repeat: no-repeat;
-        background-color: #343434;
     }
 
 /*コンセプト*/
